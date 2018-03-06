@@ -1,0 +1,78 @@
+h2,h3{
+    padding: 0;
+    margin: 0;
+}
+
+.wareClassify{
+    width: 1200px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.wareClassify-left{
+    display: inline-block;
+    width: 210px;
+    background-color: #ddd;
+    float: left;
+}
+
+.wareClassify-left a{
+    color:#333;
+}
+
+.wareClassify-left ul{
+    padding: 0 0 0 15px;
+    border-bottom: 1px solid #aaa;
+}
+
+.wareClassify-left li{
+    width: 64px;
+    display: inline-block;
+    margin: 8px 10px;
+}
+
+h2{
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 0;
+    border-bottom: 1px solid #aaa;
+}
+
+h3{
+    padding: 15px 0 0 25px;
+}
+
+.wareClassify-right{
+    display: inline-block;
+    /*width: 811px;*/
+    /*position: absolute;*/
+    float: left;
+    margin-left: 10px;
+}
+
+.wareClassify-img img{
+    width: 980px;
+}
+
+.camera-Tittle{
+    border-bottom: 1px solid #ccc;
+}
+
+.camera-classify{
+    width: 980px;
+}
+
+.camera-classify li{
+    display: inline-block;
+    padding: 40px 40px 20px 40px;;
+    border: 1px solid #ccc;
+}
+
+.camera-classify li a{
+    display: block;
+}
+
+.camera-classify img{
+    width: 150px;
+    margin: 0 10px 0 0;
+}

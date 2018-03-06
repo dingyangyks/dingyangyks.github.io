@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录注册</title>
+    <!--公共样式-->
+    <link rel="stylesheet" href="../css/init.css">
+    <link rel="stylesheet" href="../css/top-foot.css">
+    <!--主页样式-->
+    <link rel="stylesheet" href="../css/sign-login.css">
+    <!--注册js-->
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/register.js"></script>
+    <!--公共脚本-->
+    <script src="../js/public.js"></script>
+</head>
+
+<body>
+    <!--头部-->
+    <div class="header">
+        <!--top-->
+        <div class="top">
+            <div class="top-content">
+                <div class="top-star">
+                    <i></i>
+                    <a href="#">收藏慕课</a>
+                </div>
+                <div class="top-inAndOut">
+                    <span>欢迎来到慕课网!</span>
+                    <a id="sign-up">[登录]</a>
+                    <a href="sign-login.html">现在注册</a>
+                </div>
+            </div>
+        </div>
+        <!--logo区-->
+        <div class="logo">
+            <div class="logo-content">
+                <!--logo图片-->
+                <div class="logo-img">
+                    <a href="main.html">
+                        <img src="../img/images/logo.jpg" alt="慕课网logo">
+                    </a>
+                </div>
+                <div class="logo-wrap">
+                    <p class="sign-up-word">欢迎注册</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--内容-->
+    <!--注册-->
+    <div class="sign-up">
+        <div class="sign-up-wrap">
+            <div class="sign-up-item">
+                <div class="sign-up-name">用户名:</div>
+                <div class="sign-input">
+                    <input type="text" placeholder="邮箱/用户名/手机号"  id="set-name">
+                    <p class="key-alert"></p>
+                </div>
+            </div>
+            <div class="sign-up-item">
+                <div class="sign-up-name">请设置密码:</div>
+                <div class="sign-input">
+                    <input type="password" id="set-key" maxlength="16">
+                    <p class="key-alert" id="set-key-alert">请输入6-16位数字和字母，字母区分大小写</p>
+                </div>
+            </div>
+            <div class="sign-up-item">
+                <div class="sign-up-name">请确认密码:</div>
+                <div class="sign-input">
+                    <input type="password" id="re-key">
+                    <p class="key-alert" id="re-key-alert">请再次输入密码</p>
+                </div>
+            </div>
+            <div class="sign-up-item">
+                <div class="sign-up-name">邮箱:</div>
+                <div class="sign-input">
+                    <input type="email" placeholder="请按正确邮箱格式书写" id="email-input">
+                    <p class="key-alert" id="email-alert">请输入邮箱</p>
+                </div>
+            </div>
+            <div class="sign-up-item">
+                <div class="sign-up-name">地址:</div>
+                <div class="sign-input">
+                    <input type="text" placeholder="请输入正确的地址">
+                </div>
+            </div>
+            <div class="sign-up-item">
+                <input type="checkbox" checked class="sign-input-content">我已阅读并同意&#60;&#60;<a href="">用户注册协议</a>&#62;&#62;
+            </div>
+            <div class="sign-up-item">
+                <input type="submit" class="sign-btn">
+            </div>
+        </div>
+    </div>
+    <!--底部版权区-->
+    <div class="footer">
+        <div class="footer-content">
+            <p>
+                <a href="http://www.imooc.com">慕课简介</a> |
+                <a href="http://www.imooc.com">慕课公告</a> |
+                <a href="http://www.imooc.com">招贤纳士</a> |
+                <a href="http://www.imooc.com">联系我们</a> | 客服热线:400-675-1234
+            </p>
+            <p>Copyright &copy; 2004 - 2017 京东JD.com 版权所有|消费者维权热线：4006067733</p>
+            <ul>
+                <li><img src="../img/images/1a.jpg" alt=""></li>
+                <li><img src="../img/images/2a.jpg" alt=""></li>
+                <li><img src="../img/images/3a.jpg" alt=""></li>
+                <li><img src="../img/images/4a.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--登录弹出层-->
+    <div class="login-wrap" id="login-wrap">
+        <div class="login">
+            <div class="login-item">
+                    <p class="item-word">邮箱/用户名/已验证手机:</p>
+                    <div class="form-wrap">
+                        <i class="use-icon"></i>
+                        <input type="text" class="login-input">
+                    </div>
+            </div>
+            <div class="login-item">
+                <p class="item-word">密码:</p>
+                <div class="form-wrap">
+                    <i class="key-icon"></i>
+                    <input type="password" class="login-input">
+                </div>
+            </div>
+            <div class="login-item">
+                <input type="radio" name="loginType">自动登录
+                <input type="radio" name="loginType">安全控件登录
+                <a href="">忘记密码?</a>
+            </div>
+            <div class="login-item">
+                <input type="button" value="登录" class="login-btn">
+            </div>
+            <div class="login-item">
+                <span>使用合作网络账号登录</span>
+                <a href="">QQ</a>
+                <a href="">网易</a>
+                <a href="">豆瓣</a>
+                <a href="">微信</a>
+            </div>
+            <div class="to-sign"><a href="../html/sign-login.html">去注册</a></div>
+            <div class="sign-close" id="sign-close">关闭</div>
+        </div>
+    </div>
+</body>
+</html>

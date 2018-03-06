@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品细节</title>
+    <!--公共样式-->
+    <link rel="stylesheet" href="../css/init.css">
+    <link rel="stylesheet" href="../css/top-foot.css">
+    <!--主页样式-->
+    <link rel="stylesheet" href="../css/con-details.css">
+    <!--jq-->
+    <script src="../js/jquery-3.1.1.js"></script>
+    <!--公共脚本-->
+    <script src="../js/public.js"></script>
+</head>
+
+<body>
+    <!--头部-->
+    <div class="header">
+        <!--top-->
+        <div class="top">
+            <div class="top-content">
+                <div class="top-star">
+                    <i></i>
+                    <a href="#">收藏慕课</a>
+                </div>
+                <div class="top-inAndOut">
+                    <span>欢迎来到慕课网!</span>
+                    <a id="sign-up">[登录]</a>
+                    <a href="sign-login.html">现在注册</a>
+                </div>
+            </div>
+        </div>
+        <!--logo区-->
+        <div class="logo">
+            <div class="logo-content">
+                <!--logo图片-->
+                <div class="logo-img">
+                    <a href="main.html">
+                        <img src="../img/images/logo.jpg" alt="慕课网logo">
+                    </a>
+                </div>
+                <div class="logo-wrap">
+                    <!--搜索框-->
+                    <div class="logo-search">
+                        <input type="text" class="input-txt">
+                        <input type="button" value="搜 索" class="input-btn">
+                    </div>
+                    <!--加入购物车-->
+                    <div class="cart">
+                        <div class="cart-add">
+                            <div class="cart-num">0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--导航栏区-->
+        <div class="nav">
+            <div class="nav-content">
+                <ul>
+                    <a href="com-display.html">
+                        <li>全部商品分类<i class="nav-down"></i></li>
+                    </a>
+                    <a href="com-display.html">
+                        <li>数码城</li>
+                    </a>
+                    <a href="com-display.html">
+                        <li>天黑黑</li>
+                    </a>
+                    <a href="com-display.html">
+                        <li>团购</li>
+                    </a>
+                    <a href="com-display.html">
+                        <li>发现</li>
+                    </a>
+                    <a href="com-display.html">
+                        <li>二手特卖</li>
+                    </a>
+                    <a href="com-display.html">
+                        <li>名品会</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--内容-->
+    <div class="center-wrap">
+        <div class="user-position">
+            <a href="">首页</a>
+            <span>&nbsp;&gt;&nbsp;</span>
+            <a href="">平板电脑</a>
+            <span>&nbsp;&gt;&nbsp;</span>
+            <a href="">Apple电脑</a>
+            <span>&nbsp;&gt;&nbsp;</span>
+            <em>MD531CH/A</em>
+        </div>
+        <div class="ware-classify-content">
+            <div class="ware-img">
+                <img src="../img/images/bg.jpg" alt="" class="big-img">
+                <div class="scale-img">
+                    <ul>
+                        <li><img src="../img/images/sm1.jpg" alt=""></li>
+                        <li><img src="../img/images/sm2.jpg" alt=""></li>
+                        <li><img src="../img/images/sm3.jpg" alt=""></li>
+                        <li><img src="../img/images/sm4.jpg" alt=""></li>
+                        <li><img src="../img/images/sm5.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="wares-details">
+                <h3>全国最低价Apple 苹果 ipad mini 16G 平板电脑 前白后银</h3>
+                <div class="dl">
+                    <div class="dt">售价:</div>
+                    <div class="dd"><em class="ware-prince">&yen;1999</em></div>
+                </div>
+                <div class="dl">
+                    <div class="dt">优惠:</div>
+                    <div class="dd"><i>· 满换购</i><span class="ware-dep">购ipad加价优惠够配件或USB充电插座</span></div>
+                </div>
+                <div class="ware-select">
+                    <div class="dl">
+                        <div class="dt">送到:</div>
+                        <div class="dd">
+                            <select name="" id="">
+                                <option value="">北京</option>
+                                <option value="">上海</option>
+                                <option value="">西安</option>
+                                <option value="">深圳</option>
+                                <option value="">成都</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="dl">
+                        <div class="dt">选择颜色:</div>
+                        <div class="dd">
+                            <input type="button" value="白色" class="ware-color">
+                            <input type="button" value="黑色" class="ware-color">
+                            <input type="button" value="灰色" class="ware-color"></br>
+                            <input type="button" value="玫瑰金" class="ware-color">
+                            <input type="button" value="深海蓝" class="ware-color">
+                            <input type="button" value="可爱粉" class="ware-color">
+                        </div>
+                    </div>
+                    <div class="dl">
+                        <div class="dt">选择类型:</div>
+                        <div class="dd">
+                            <input type="button" value="A型" class="war-type">
+                            <input type="button" value="B型" class="war-type">
+                            <input type="button" value="C型" class="war-type"></br>
+                            <input type="button" value="D型" class="war-type">
+                            <input type="button" value="E型" class="war-type">
+                            <input type="button" value="F型" class="war-type">
+                        </div>
+                    </div>
+                    <div class="dl">
+                        <div class="dt">选择数量:</div>
+                        <div class="dd plus-num">
+                            <div class="reduce">-</div>
+                            <input type="text" value="1">
+                            <div class="plus">+</div>
+                        </div>
+                        <span class="limit"> 限购9件</span>
+                    </div>
+                </div>
+                <div class="client-select">
+                    <span>已选择:</span>
+                    <span class="selected">白色,A型</span>
+                </div>
+                <div class="buy">
+                    <div class="buy-left">
+                        <img src="../img/images/shop_car.jpg" alt="">
+                    </div>
+                    <div class="buy-right">
+                        <a href="../html/buy.html">立即购买</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="evaluation-wrap">
+            <div class="evaluation-wrap-left">
+                <div class="same-ware-tittle"><strong>&nbsp;&nbsp;同价位</strong></div>
+                <ul>
+                    <li>
+                        <a href="../html/com-display.html">
+                            <img src="../img/images/u=3053958766,860862877&fm=26&gp=0.jpg" alt="">
+                            <p><a href="">超可爱的小猫</a></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../html/com-display.html">
+                            <img src="../img/images/timg (1).jpg" alt="">
+                            <p><a href="">超可爱的小猫</a></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../html/com-display.html">
+                            <img src="../img/images/timg (2).jpg" alt="">
+                            <p><a href="">超可爱的小猫</a></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../html/com-display.html">
+                            <img src="../img/images/timg.jpg" alt="">
+                            <p><a href="">超可爱的小猫</a></p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="evaluation-wrap-right">
+                <div class="same-ware-tittle">
+                    <span class="introduce"><strong>产品介绍</strong></span>
+                    <span class="evaluation"><strong>商品评价</strong></span>
+                </div>
+                <div class="introduce-content">
+                    <div class="introduce-content-ad">
+                        <img src="../img/images/ad.jpg" alt="">
+                    </div>
+                    <div class="recommend">
+                        <span><strong>强烈推荐</strong></span>
+                        <p>各种尺码规格不一样！请参考我们尺码表哦！ 上衣和裤子可以搭配不同尺码，联系客服或者拍下备注留言 运动面料！穿着舒服，透气，速干很轻，吸水性好，！欢迎来图定制！球衣颜色由君选择！！一件以上即可DIY,可以修改号码！图案！欢迎咨询！！
+                            拥有各种颜色的科比，詹姆斯，库里，杜兰特，罗斯，韦德，威少，保罗，安东尼，艾弗森，麦迪，欧文，哈登，等球星球衣可以联系客服！
+                        </p>
+                    </div>
+                    <div class="recommend">
+                        <span><strong>相关图片</strong></span>
+                        <p>各种尺码规格不一样！请参考我们尺码表哦！ 上衣和裤子可以搭配不同尺码，联系客服或者拍下备注留言 运动面料！穿着舒服，透气，速干很轻，吸水性好，！欢迎来图定制！球衣颜色由君选择！！一件以上即可DIY,可以修改号码！图案！欢迎咨询！！
+                            拥有各种颜色的科比，詹姆斯，库里，杜兰特，罗斯，韦德，威少，保罗，安东尼，艾弗森，麦迪，欧文，哈登，等球星球衣可以联系客服！
+                        </p>
+                        <img src="../img/images/pad.jpg" alt="">
+                    </div>
+                </div><!--商品介绍结束-->
+                <div class="evaluation-content">
+                    <div>
+                        <span><strong>商品评价</strong></span>
+                        <div class="scroe">4.7分</div>
+                        <div class="scroe-img"></div>
+                        <ol class="level">
+                            <li>非常不满</li>
+                            <li>不满意</li>
+                            <li>一般</li>
+                            <li>满意</li>
+                            <li>非常满意</li>
+                        </ol>
+                    </div>
+                    <div class="words">
+                        <span><strong>全部留言</strong></span>
+                        <div class="user">
+                            <div class="headImg">
+                                <img src="../img/images/user.jpg" alt="">
+                            </div>
+                            <div class="user-words">
+                                <i></i><i></i><i></i><i></i><i></i>
+                                <p>真的太好了,质量有保证,快递很快,快递小哥很帅</p>
+                                <a href="">踩(21)</a>
+                                <a href="">赞(221)</a>
+                            </div>
+                        </div>
+                        <div class="user">
+                            <div class="headImg">
+                                <img src="../img/images/user.jpg" alt="">
+                            </div>
+                            <div class="user-words">
+                                <i></i><i></i><i></i><i></i><i></i>
+                                <p>真的太好了,质量有保证,快递很快,快递小哥很帅</p>
+                                <a href="">踩(21)</a>
+                                <a href="">赞(221)</a>
+                            </div>
+                        </div>
+                        <div class="user">
+                            <div class="headImg">
+                                <img src="../img/images/user.jpg" alt="">
+                            </div>
+                            <div class="user-words">
+                                <i></i><i></i><i></i><i></i><i></i>
+                                <p>真的太好了,质量有保证,快递很快,快递小哥很帅</p>
+                                <a href="">踩(21)</a>
+                                <a href="">赞(221)</a>
+                            </div>
+                        </div>
+                        <div class="user">
+                            <div class="headImg">
+                                <img src="../img/images/user.jpg" alt="">
+                            </div>
+                            <div class="user-words">
+                                <i></i><i></i><i></i><i></i><i></i>
+                                <p>真的太好了,质量有保证,快递很快,快递小哥很帅</p>
+                                <a href="">踩(21)</a>
+                                <a href="">赞(221)</a>
+                            </div>
+                        </div>
+                        <div class="user">
+                            <div class="headImg">
+                                <img src="../img/images/user.jpg" alt="">
+                            </div>
+                            <div class="user-words">
+                                <i></i><i></i><i></i><i></i><i></i>
+                                <p>真的太好了,质量有保证,快递很快,快递小哥很帅</p>
+                                <a href="">踩(21)</a>
+                                <a href="">赞(221)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-wrap">
+                        <div class="page">
+                            <a href="#">上一页</a>
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a class="hl">...</a>
+                            <a href="#">6</a>
+                            <a href="#">下一页</a>
+                        </div>
+                        <div class="jump-page">
+                            <p>&nbsp;跳转</p>
+                            <input type="text" class="write-page" value="1">
+                            <input type="button" value="确定">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部版权区-->
+    <div class="footer">
+        <div class="footer-content">
+            <p>
+                <a href="http://www.imooc.com">慕课简介</a> |
+                <a href="http://www.imooc.com">慕课公告</a> |
+                <a href="http://www.imooc.com">招贤纳士</a> |
+                <a href="http://www.imooc.com">联系我们</a> | 客服热线:400-675-1234
+            </p>
+            <p>Copyright &copy; 2004 - 2017 京东JD.com 版权所有|消费者维权热线：4006067733</p>
+            <ul>
+                <li><img src="../img/images/1a.jpg" alt=""></li>
+                <li><img src="../img/images/2a.jpg" alt=""></li>
+                <li><img src="../img/images/3a.jpg" alt=""></li>
+                <li><img src="../img/images/4a.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--登录弹出层-->
+    <div class="login-wrap" id="login-wrap">
+        <div class="login">
+            <div class="login-item">
+                    <p class="item-word">邮箱/用户名/已验证手机:</p>
+                    <div class="form-wrap">
+                        <i class="use-icon"></i>
+                        <input type="text" class="login-input">
+                    </div>
+            </div>
+            <div class="login-item">
+                <p class="item-word">密码:</p>
+                <div class="form-wrap">
+                    <i class="key-icon"></i>
+                    <input type="password" class="login-input">
+                </div>
+            </div>
+            <div class="login-item">
+                <input type="radio" name="loginType">自动登录
+                <input type="radio" name="loginType">安全控件登录
+                <a href="">忘记密码?</a>
+            </div>
+            <div class="login-item">
+                <input type="button" value="登录" class="login-btn">
+            </div>
+            <div class="login-item">
+                <span>使用合作网络账号登录</span>
+                <a href="">QQ</a>
+                <a href="">网易</a>
+                <a href="">豆瓣</a>
+                <a href="">微信</a>
+            </div>
+            <div class="to-sign"><a href="../html/sign-login.html">去注册</a></div>
+            <div class="sign-close" id="sign-close">关闭</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+
+/*登录 注册页*/
+.sign-up-tittle{
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.sign-up{
+    width: 410px;
+    border: 1px solid #ccc;
+    margin: 10px auto 50px auto;
+    font-size: 20px;
+    position:relative;
+}
+
+.item-word{
+    text-align: left;
+    /*font-size: 20px; */
+    padding-left: 60px;  
+}
+
+.sign-up-item{
+    text-align: center;
+    margin: 24px 20px;
+    /*overflow: hidden;*/
+}
+
+.form-wrap{
+    overflow: hidden;
+    width: 310px;
+    margin: 5px auto
+}
+
+.sign-up-item .use-icon,.sign-up-item .key-icon{
+    display: block;
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+
+.sign-up-item .use-icon{
+    background: url(../img/icon/user_icon.jpg) center right no-repeat;
+}
+
+.sign-up-item .key-icon{
+    background: url(../img/icon/password_icon.jpg) center right no-repeat;
+}
+
+.sign-up-input{
+    float: left;
+    width: 250px;
+    height: 20px;
+    
+}
+
+.sign-up-item a{
+    color:#207ada;
+}
+
+.sign-up-btn{
+    width: 200px;
+    height: 45px;
+    font-size: 20px;
+}
+
+.to-sign{
+    width: 80px;
+    height: 40px;
+    background:#6dd70e;
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*注册*/
+.sign-up-name{
+    width:85px;
+    float: left;
+    font-size: 16px;
+    text-align: right;
+    margin-left: 30px;
+}
+
+.sign-input{
+    /*margin-left: -70px;*/
+    /*float: left;*/
+    display: inline-block;
+    margin-left: -15px;
+    width: 205px;
+}
+
+.sign-input input{
+    width: 200px;
+    height: 25px;
+}
+
+.sign-input-content{
+    font-size: 16px;
+}
+
+.sign-btn{
+    width: 200px;
+    height: 45px;
+    font-size: 20px;
+}
+
+.key-alert{
+    color: #ff0000;
+    font-size: 14px;
+    text-align: left;
+    margin: 5px 0 0 0;
+    display: none;
+}
+
+.sign-up-word{
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    margin-left: 207px;
+}

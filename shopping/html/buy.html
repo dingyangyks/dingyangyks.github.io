@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购买物流页</title>
+     <!--公共样式-->
+    <link rel="stylesheet" href="../css/init.css">
+    <link rel="stylesheet" href="../css/top-foot.css">
+    <!--主页样式-->
+    <link rel="stylesheet" href="../css/buy.css">
+    <!--jq-->
+    <script src="../js/jquery-3.1.1.js"></script>
+    <!--公共脚本-->
+    <script src="../js/public.js"></script>
+</head>
+
+<body>
+    <!--头部-->
+    <div class="header">
+        <!--top-->
+        <div class="top">
+            <div class="top-content">
+                <div class="top-star">
+                    <i></i>
+                    <a href="#">收藏慕课</a>
+                </div>
+                <div class="top-inAndOut">
+                    <span>欢迎来到慕课网!</span>
+                    <a id="sign-up">[登录]</a>
+                    <a href="sign-login.html">现在注册</a>
+                </div>
+            </div>
+        </div>
+        <!--logo区-->
+        <div class="logo">
+            <div class="logo-content">
+                <!--logo图片-->
+                <div class="logo-img">
+                    <a href="main.html">
+                        <img src="../img/images/logo.jpg" alt="慕课网logo">
+                    </a>
+                </div>
+                <div class="logo-wrap">
+                    <!--搜索框-->
+                    <div class="logo-search">
+                        <input type="text" class="input-txt">
+                        <input type="button" value="搜 索" class="input-btn">
+                    </div>
+                    <!--加入购物车-->
+                    <div class="cart">
+                        <div class="cart-add">
+                            <div class="cart-num">0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--导航栏区-->
+        <div class="nav">
+            <div class="nav-content">
+                <ul>
+                    <a href="com-display.html"><li>全部商品分类<i class="nav-down"></i></li></a>
+                    <a href="com-display.html"><li>数码城</li></a>
+                    <a href="com-display.html"><li>天黑黑</li></a>
+                    <a href="com-display.html"><li>团购</li></a>
+                    <a href="com-display.html"><li>发现</li></a>
+                    <a href="com-display.html"><li>二手特卖</li></a>
+                    <a href="com-display.html"><li>名品会</li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--内容-->
+     <div class="logistics-wrap">
+            <div class="record">
+                <h3 class="log-tittle">收货信息</h3>
+                <div class="received-content">
+                    <div class="rec-left">选择地区:</div>
+                    <div class="rec-right">
+                        <select class="address" name="" id="">
+                            <option  value="">北京市 海淀区 五环内</option>
+                            <option  value="">西安市 碑林区 三环内</option>
+                            <option  value="">长沙市 岳麓区 三环内</option>
+                            <option  value="">南昌市 前湖区 三环内</option>
+                            <option  value="">宜昌市 猇亭区 三环内</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="received-content">
+                    <div class="rec-left">详细地址:</div>
+                    <div class="rec-right">
+                        <input type="text" placeholder="最多输入26个汉字">
+                    </div>
+                </div>
+                <div class="received-content">
+                    <div class="rec-left">收货人:</div>
+                    <div class="rec-right">
+                        <input type="text" placeholder="最多是个汉字">
+                    </div>
+                </div>
+                <div class="received-content">
+                    <div class="rec-left">手机:</div>
+                    <div class="rec-right">
+                        <input type="text" placeholder="如123456789">
+                    </div>
+                </div>
+                <div class="sure-address">
+                    <img src="../img/images/sh_bg.gif" alt="">
+                </div>
+            </div>
+            <div class="record">
+                <h3 class="log-tittle">支付方式</h3>
+                <div class="pay-type">
+                    <input type="radio" name="paytype">微信支付 用微信扫一扫可支付
+                    <br/>
+                    <input type="radio" name="paytype">货到付款 送货上门后再付款,使用现金或刷银行卡
+                </div>
+            </div>
+            <div class="record">
+                <h3 class="log-tittle">发票信息</h3>
+                <div class="invoice">
+                    <div class="invoice-wrap">
+                        <input type="checkbox">需要发票<br/>
+                    </div>
+                    <div class="invoice-wrap">
+                         发票类型:
+                        <select name="" id="" class="invoice-select">
+                            <option value="">商业零售发票</option>
+                            <option value="">个人零售发票</option>
+                            <option value="">企业发票</option>
+                        </select><br/>
+                    </div>
+                    <div class="invoice-wrap">
+                        发票抬头:
+                        <select name="" id="" class="invoice-select">
+                            <option value="">个人</option>
+                            <option value="">商业</option>
+                            <option value="">企业</option>
+                        </select>
+                        <input type="text" placeholder="阿斯顿">
+                        <br/>
+                    </div>
+                </div>
+            </div>
+            <div class="record">
+                <h3 class="log-tittle">送货清单</h3>
+                <div class="wareList-table">
+                    <div class="wareList-tr">
+                        <div class="wareList-th">商品名称</div>
+                        <div class="wareList-th">单价</div>
+                        <div class="wareList-th">返现</div>
+                        <div class="wareList-th">数量</div>
+                        <div class="wareList-th">小计</div>
+                    </div>
+                     <div class="wareList-tr">
+                        <div class="wareList-td">
+                            <img src="../img/images/shopImg.png" alt="">
+                            <p>海信 三门冰箱 银色</p>
+                            <p>[赠品] 保鲜盒,抽真空,海信冰洗赠品</p>
+                            </br>
+                            <p><a href="">若您对包装有特殊要求,请在此留言</a></p>
+                        </div>
+                        <div class="wareList-td">&yen;1459.00</div>
+                        <div class="wareList-td">&yen;0.00</div>
+                        <div class="wareList-td">1</div>
+                        <div class="wareList-td">&yen;1459.00</div>
+                    </div>
+                </div>
+            </div>
+            <div class="record">
+                <h3 class="log-tittle">订单结算</h3>
+                <div class="total">
+                    <span class="totalWord">总计</span>
+                    <span><strong class="totalCount">&yen;1459.00</strong></span>
+                    <div class="sumbit-money">提交订单</div>
+                </div>
+            </div>
+        </div>
+    <!--底部版权区-->
+    <div class="footer">
+        <div class="footer-content">
+            <p>
+                <a href="http://www.imooc.com">慕课简介</a> |
+                <a href="http://www.imooc.com">慕课公告</a> |
+                <a href="http://www.imooc.com">招贤纳士</a> |
+                <a href="http://www.imooc.com">联系我们</a> | 客服热线:400-675-1234
+            </p>
+            <p>Copyright &copy; 2004 - 2017 京东JD.com 版权所有|消费者维权热线：4006067733</p>
+            <ul>
+                <li><img src="../img/images/1a.jpg" alt=""></li>
+                <li><img src="../img/images/2a.jpg" alt=""></li>
+                <li><img src="../img/images/3a.jpg" alt=""></li>
+                <li><img src="../img/images/4a.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--登录弹出层-->
+    <div class="login-wrap" id="login-wrap">
+        <div class="login">
+            <div class="login-item">
+                    <p class="item-word">邮箱/用户名/已验证手机:</p>
+                    <div class="form-wrap">
+                        <i class="use-icon"></i>
+                        <input type="text" class="login-input">
+                    </div>
+            </div>
+            <div class="login-item">
+                <p class="item-word">密码:</p>
+                <div class="form-wrap">
+                    <i class="key-icon"></i>
+                    <input type="password" class="login-input">
+                </div>
+            </div>
+            <div class="login-item">
+                <input type="radio" name="loginType">自动登录
+                <input type="radio" name="loginType">安全控件登录
+                <a href="">忘记密码?</a>
+            </div>
+            <div class="login-item">
+                <input type="button" value="登录" class="login-btn">
+            </div>
+            <div class="login-item">
+                <span>使用合作网络账号登录</span>
+                <a href="">QQ</a>
+                <a href="">网易</a>
+                <a href="">豆瓣</a>
+                <a href="">微信</a>
+            </div>
+            <div class="to-sign"><a href="../html/sign-login.html">去注册</a></div>
+            <div class="sign-close" id="sign-close">关闭</div>
+        </div>
+    </div>
+</body>
+</html>
