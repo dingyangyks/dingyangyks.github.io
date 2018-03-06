@@ -1,0 +1,178 @@
+html,body{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    font-family: SimHei;
+}
+/*计分模块*/
+.head{
+    height: 35%;
+    background-color: #e0c4aa;
+    position: relative;
+    
+}
+
+.head p{
+    font-size: 50px;
+    padding-top: 40px;
+    margin: 0;
+    text-align: center;
+}
+
+.newGame{
+    position: absolute;
+    left: 50%;
+    margin-left: -73px;
+    top: 50%;
+    width: 146px;
+    height: 45px;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 10px;
+    background-color: #8f7a66;
+}
+
+.score{
+    font-size: 30px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+/*游戏模块*/
+.box{
+    width: 100%;
+    height: 100%;
+    background-color: #e0c4aa;
+}
+
+.main{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-color: #bbada0;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 60%;
+    border-radius: 15px;
+    padding: 3px;
+}
+
+.cellbox{
+    width: 65px;
+    height: 65px;
+    float: left;
+    line-height: 65px;
+    margin: 5px;
+    border-radius: 7px;
+    font-size: 35px;
+    text-align: center;
+    font-weight:bold;
+    background-color: #ccc0b3;
+    color: white;
+}
+
+/*动画*/
+@keyframes mycell{
+    from{
+        opacity: 0
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.donghua{
+    opacity: 0;
+    animation-name:mycell;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+/*数字模块*/
+.num_2{
+    background-color: rgb(238, 228, 218);
+    color: rgb(119, 110, 101);
+}
+
+.num_4{
+    background-color: rgb(237, 224, 200);
+    color: rgb(119, 110, 101);
+}
+
+.num_8{
+    background-color: rgb(242, 177, 121);
+}
+
+.num_16{
+     background-color:rgb(245, 149, 99);
+}
+
+.num_32{
+    background-color: rgb(246, 124, 95);
+}
+
+.num_64{
+    background-color: rgb(246, 94, 59);
+}
+.num_128{
+    background-color: rgb(237, 207, 114);
+}
+
+.num_256{
+    background-color: rgb(237, 204, 97);
+}
+
+.num_512{
+    background-color: rgb(153, 204, 0);
+}
+
+.num_1024{
+    background-color: rgb(51, 193, 191);
+    font-size:26px;
+}
+
+.num_2048{
+    background-color: rgb(106, 137, 220);
+    font-size: 26px;
+}
+
+/*结束模块*/
+.wrap{
+    display: none;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 60%;
+    left: 50%;
+    padding: 3px;
+    color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0,0.7);
+}
+
+.wrap span{
+    font-size: 45px;
+    display: inline-block;
+    padding-top: 38px;
+}
+
+#score{
+    font-size: 40px;
+}
+
+#restart{
+    font-size: 40px;
+    width: 161px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 10px;
+    background-color: #8f7a66;
+    margin: 15px auto;
+}
