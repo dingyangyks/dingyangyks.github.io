@@ -1,0 +1,286 @@
+.plate{
+    width: 280px;
+    height: 280px;
+    border: 10px solid #fff;
+    margin: 150px auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px rgb(102, 102, 102);
+    position: relative;
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.in_circle{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 96%;
+    height: 96%;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #ddd;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;   
+    margin: 0;
+    padding: 0;
+}
+
+.point_circle{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.twelve{
+    position: absolute;
+    left: 50%; 
+    transform: translate(-50%,0);
+}
+
+.three{
+    position: absolute;
+    top: 50%; 
+    right: 1%;
+    transform: translate(0,-50%);
+} 
+
+/*中心黑点*/
+.circleCenter{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 8%;
+    height: 8%;
+    background-color: #5b5b5b;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow:0px 0px 20px #000;
+}
+
+/*中心红点*/
+.red_center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 6%;
+    height: 6%;
+    background-color: #aa0000;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow:0px 0px 20px #000;
+}
+
+/*指针*/
+.minutes{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 100px;
+    margin-left: -5px;
+    margin-top: -105px;
+    background-color: #5b5b5b;
+    border-radius: 25px;
+    transform:rotate(0deg);
+    transform-origin:5px 105px;
+    box-shadow:0px 0px 8px #000;
+}
+
+.second{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -1px;
+    margin-top: -115px;
+    width: 2px;
+    height: 130px;
+    transform: rotate(0deg);
+    background-color: #aa0000;
+    transform-origin: 1px 115px;
+    box-shadow:0px 0px 8px #ccc;
+}
+
+.hour{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 80px;
+    margin-left: -6px;
+    margin-top: -90px;
+    background-color: #5b5b5b;
+    border-radius: 25px;
+    transform:rotate(0deg);
+    transform-origin:7.5px 90px;
+    box-shadow:0px 0px 8px #000;
+}
+
+/*分数*/
+.score{
+    position: absolute;
+    font-size: 40px;
+    color: #aa0000;
+    left:50%;
+    top: 110%;
+    transform: translate(-50%,0)
+}
+
+.record{
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    margin-left: -75px;
+    width: 150px;
+    height: 30px;
+    border: 1px solid #000;
+    overflow: scroll;
+    text-align: center;
+    display: none;
+}
+
+.record span{
+    display: block;
+    color:#aa0000;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+/*秒表按钮*/
+
+.drawing{
+    position: absolute;
+    top: -58px;
+    left: 50%;
+    margin-left: -30px;
+    z-index: -1;
+}
+
+#drawing1{
+    position: absolute;
+    top: -55px;
+    left: 50%;
+    margin-left: -30px;
+    z-index: -1;
+    transform: rotate(-35deg);
+    transform-origin: 30px 200px;
+}
+
+#drawing2{
+    position: absolute;
+    top: -55px;
+    left: 50%;
+    margin-left: -30px;
+    z-index: -1;
+    transform: rotate(35deg);
+    transform-origin: 30px 200px;
+}
+
+.circleBtn{
+    position: absolute;
+    top: -105px;
+    left: 50%;
+    margin-left: -50px;
+    z-index: -2;
+}
+
+@keyframes toDown{
+    from{
+        top:-55px;
+    }
+    to{
+        top: -50px;
+    }
+}
+
+.drawing:active,#drawing2:active{
+    animation: toDown 0.3s linear alternate;
+}
+
+
+/*刻度*/
+.points{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: 50%;
+    margin-left: -2.5px;
+    border-radius: 50%;
+    background-color: #aaa;
+    transform: rotate(10deg);
+    transform-origin: 2.5px 134.4px;
+}
+
+/*秒表计时*/
+.score{
+    position: absolute;
+    font-size: 40px;
+    color: #aa0000;
+    left:50%;
+    top: 110%;
+    transform: translate(-50%,0)
+}
+
+.record{
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    margin-left: -75px;
+    width: 150px;
+    height: 30px;
+    border: 1px solid #000;
+    overflow: scroll;
+    text-align: center;
+    display: none;
+}
+
+.record span{
+    display: block;
+    color:#aa0000;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+
+/*倒计时*/
+.ruler{
+    position: absolute;
+    left: -318px;
+    top: -46%;;
+    width: 270px;
+    height: 50px;
+    font-size: 0;
+    background-color: #b6beda;
+    transform: translate(0);
+}
+
+.ruler i{
+    position: absolute;
+    width: 3px;
+    height: 5px;
+    /*margin: 0 5px;*/
+    display: inline-block;
+    background-color: #000;
+}
+
+.ring{
+    width: 50px;
+    height: 50px;
+    border: 5px solid #b09e9e;
+    border-radius: 60% 40%;
+    transform: rotate(135deg);
+    position: absolute;
+    left: 99%;
+    top: -10%;
+    z-index: -1;
+    box-shadow: 0 0 15px #000;
+}
